@@ -61,11 +61,14 @@
 
 .card-body {
     text-align: center;
+    -webkit-text-fill-color: #0E0E0E;
+    background: #fff;
 }
 
 .card-item {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 10px;
+    background-color: #FFFFFF;
 }
 
 .card-item-footer {
@@ -74,20 +77,47 @@
 }
 
 .my-section {
-    background: #5000CA;
+    background: #d8d4d4cc;
+    height: 500px;
+    padding: 5%;
+    margin-bottom: -16%;
 }
 
 .testimonial-sec {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 5%;
+    justify-content: space-evenly;
 }
 
 .text-card {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    padding: 44px 58px;
+    height: inherit;
+    background: #FFFFFF;
+    padding: 5%;
+
+}
+
+.text-card-line {
     width: 100%;
-    margin-bottom: 70px;
+    margin: 2%;
+    height: 1px;
+    border: #000000;
+    background-color: #000000;
+}
+
+.review-part {
+    width: 100%;
+    gap: 5%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+}
+
+.review-json {
+    justify-content: center;
+    display: flex;
 }
 
 .fa {
@@ -173,8 +203,9 @@
 .modal {
     width: 80%;
     height: 150px;
-    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
-    border: 1px solid #000000;
+    background: #2553e9;
+    /* background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%); */
+    border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10.7236px;
     display: flex;
@@ -182,7 +213,7 @@
     justify-content: center;
     position: relative;
     margin: 10%;
-    margin-bottom: -7%;
+    margin-bottom: -5%;
 }
 .head-1 {
     font-family: 'Manrope';
@@ -222,7 +253,17 @@
 
 .thefooter {
     width: screen;
-    height: 300px;
-    background: rgb(27, 27, 104);
+    height: inherit;
+    background: rgba(55, 43, 122, 0.882);
 
+
+}
+
+.footertext {
+    -webkit-text-fill-color: #FFFFFF;
+    padding: 10%;
+}
+
+.footertext p {
+    width: 60%;
 }
